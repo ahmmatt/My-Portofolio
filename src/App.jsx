@@ -2,13 +2,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 // Tambahkan SiTiktok di sini
-import { SiFigma, SiTiktok } from "react-icons/si";
+import { SiFigma } from "react-icons/si";
 // Tambahkan FaWhatsapp dan FaExternalLinkAlt di dalam kurung kurawal ini
 import { 
   FaGraduationCap, FaFileWord, FaFileExcel, FaInstagram, 
   FaRegHeart, FaRegComment, FaRegPaperPlane, FaRegBookmark,
-  FaEnvelope, FaLinkedin, FaGithub, FaArrowRight, FaClock,
-  FaWhatsapp, FaExternalLinkAlt 
+  FaLinkedin, FaArrowRight, FaClock,
+  FaWhatsapp,  
 } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 
