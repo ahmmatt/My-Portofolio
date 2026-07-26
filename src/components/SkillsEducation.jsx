@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { 
   SiPython, SiHtml5, SiCplusplus, SiJavascript, SiPhp, SiReact, SiVite, SiLaravel, SiDart,
-  SiFigma, SiSupabase, SiGit, SiPostman, SiMysql, SiDocker, SiCpanel, SiAndroidstudio, SiFlutter
+  SiFigma, SiSupabase, SiGit, SiPostman, SiMysql, SiDocker, SiCpanel, SiAndroidstudio, SiFlutter, SiCisco, SiGithubactions
 } from "react-icons/si";
 import { 
   FaDatabase, FaBrain, FaUsers, FaRegComments, FaTasks, FaChartLine, FaSyncAlt, FaProjectDiagram, FaFileWord, FaFileExcel 
@@ -42,6 +42,8 @@ function SkillsEducation() {
     { name: 'Antigravity', iconText: 'Ag', hoverColor: 'group-hover:text-purple-400', hoverBg: 'group-hover:bg-purple-400/20', hoverBorder: 'group-hover:border-purple-400' },
     { name: 'CPanel', icon: <SiCpanel />, hoverColor: 'group-hover:text-orange-500', hoverBg: 'group-hover:bg-orange-500/20', hoverBorder: 'group-hover:border-orange-500' },
     { name: 'Android Studio', icon: <SiAndroidstudio />, hoverColor: 'group-hover:text-green-400', hoverBg: 'group-hover:bg-green-400/20', hoverBorder: 'group-hover:border-green-400' },
+    { name: 'Cisco', icon: <SiCisco />, hoverColor: 'group-hover:text-green-400', hoverBg: 'group-hover:bg-green-400/20', hoverBorder: 'group-hover:border-green-400' },
+    { name: 'CI/CD', icon: <SiGithubactions />, hoverColor: 'group-hover:text-blue-400', hoverBg: 'group-hover:bg-blue-400/20', hoverBorder: 'group-hover:border-blue-400' },
   ];
 
   const softSkills = [
