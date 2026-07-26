@@ -29,7 +29,7 @@ function FiveDayChallenge() {
       
       {/* --- HEADER KIRI ATAS (Baru Ditambahkan) --- */}
       <motion.div 
-        className="absolute top-6 left-6 md:top-10 md:left-10 z-30 flex flex-col"
+        className="absolute top-12 left-6 md:top-10 md:left-10 z-30 flex flex-col"
         initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <span className="text-gray-500 text-[10px] md:text-xs font-semibold tracking-widest uppercase mb-1">Skills</span>
@@ -46,25 +46,25 @@ function FiveDayChallenge() {
         
         {/* --- SISI KIRI: TEKS TIPOGRAFI --- */}
         <motion.div 
-          className="w-full md:w-1/2 flex flex-col items-start mb-6 md:mb-0 md:-translate-x-6 lg:-translate-x-12"
+          className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left mb-8 md:mb-0 md:-translate-x-6 lg:-translate-x-12"
           initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <span className="text-gray-500 text-[10px] md:text-xs font-semibold tracking-widest uppercase mb-3">Content Creation</span>
+          <span className="text-gray-500 text-[10px] md:text-xs font-semibold tracking-widest uppercase mb-1 md:mb-3">Content Creation</span>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.1]">
             5 Day Challenge <br />
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">Making Video</span>
           </h2>
           
-          {/* Tag / Kartu Nama Instagram Minimalis */}
-          <div className="mt-6 md:mt-8 flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 px-4 md:px-5 py-2 md:py-3 rounded-full shadow-lg">
-            <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 flex items-center justify-center p-[2px]">
+          {/* Tag / Kartu Nama Instagram Minimalis (Desktop Only) */}
+          <div className="hidden md:flex mt-8 items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 px-5 py-3 rounded-full shadow-lg">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 flex items-center justify-center p-[2px]">
               <div className="w-full h-full bg-black rounded-full overflow-hidden border-2 border-black">
                  <img src={socmedpp} alt="Avatar" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="text-[10px] md:text-xs text-gray-400 font-light">Follow me on</span>
-              <span className="text-xs md:text-sm font-medium text-white flex items-center gap-2">
+              <span className="text-xs text-gray-400 font-light">Follow me on</span>
+              <span className="text-sm font-medium text-white flex items-center gap-2">
                 <FaInstagram className="text-pink-500" /> @luigisww
               </span>
             </div>
@@ -73,12 +73,13 @@ function FiveDayChallenge() {
 
         {/* --- SISI KANAN: KONTEN INTERAKTIF (CARD IG DIPERKECIL & KAPSUL ANGKA) --- */}
         <motion.div 
-          className="w-full md:w-1/2 flex flex-row items-center justify-end gap-3 md:gap-6"
+          className="w-full md:w-1/2 flex flex-row items-center justify-center md:justify-end gap-3 md:gap-6"
           initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
         >
           
           {/* 1. CARD INSTAGRAM REPLIKA (Ukuran Diperkecil) */}
-          <div className="w-[240px] md:w-[280px] lg:w-[300px] bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl flex flex-col">
+          <div className="relative w-[60%] sm:w-[50%] md:w-[280px] lg:w-[300px]">
+            <div className="w-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl flex flex-col">
             
             {/* Header IG */}
             <div className="px-3 py-2 md:px-4 md:py-3 flex items-center justify-between border-b border-white/5">
@@ -135,9 +136,25 @@ function FiveDayChallenge() {
 
             </div>
           </div>
+        </div>
+
+        {/* Tag / Kartu Nama Instagram Minimalis (Mobile Only - Dipindah ke ujung layar) */}
+        <div className="absolute -bottom-16 right-2 flex md:hidden items-center gap-2 bg-white/5 backdrop-blur-md border border-white/10 px-3 py-1.5 rounded-full shadow-lg z-30">
+          <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 flex items-center justify-center p-[2px]">
+            <div className="w-full h-full bg-black rounded-full overflow-hidden border-2 border-black">
+               <img src={socmedpp} alt="Avatar" className="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div className="flex flex-col pr-1">
+            <span className="text-[9px] text-gray-400 font-light leading-none mb-0.5">Follow me on</span>
+            <span className="text-[11px] font-medium text-white flex items-center gap-1.5 leading-none">
+              <FaInstagram className="text-pink-500 text-[10px]" /> @luigisww
+            </span>
+          </div>
+        </div>
 
           {/* 2. KAPSUL NAVIGASI VERTIKAL (Otomatis menyesuaikan jadi 5 angka) */}
-          <div className="w-10 md:w-14 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full py-4 flex flex-col items-center gap-2 md:gap-3 shadow-xl">
+          <div className="w-8 md:w-14 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full py-2 md:py-4 flex flex-col items-center gap-1 md:gap-3 shadow-xl">
             {challengeData.map((data) => (
               <button
                 key={data.id}

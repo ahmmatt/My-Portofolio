@@ -38,7 +38,7 @@ function Achievement() {
 
       {/* --- HEADER KIRI ATAS --- */}
       <motion.div 
-        className="absolute top-6 left-6 md:top-10 md:left-12 z-30 flex flex-col"
+        className="w-full px-6 md:px-0 md:absolute md:top-10 md:left-12 z-30 flex flex-col mb-4 md:mb-0"
         initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <span className="text-gray-400 text-[10px] md:text-xs font-semibold tracking-widest uppercase mb-1">Achievement</span>
@@ -49,7 +49,7 @@ function Achievement() {
       </motion.div>
 
       {/* --- KONTEN UTAMA: SEAMLESS AUTO SCROLL --- */}
-      <div className="w-full mt-24 md:mt-10 z-20 overflow-hidden flex">
+      <div className="w-full mt-4 md:mt-10 z-20 overflow-hidden flex">
         {/* Rel Panjang Animasi (Berisi 2 Grid yang dipisahkan oleh gap) */}
         <div className="animate-scroll-continuous gap-3 md:gap-5 py-10 px-4 items-center">
           

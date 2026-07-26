@@ -13,7 +13,7 @@ function ExperienceMovie() {
       
       {/* --- HEADER KIRI ATAS --- */}
       <motion.div 
-        className="absolute top-6 left-6 md:top-10 md:left-10 z-20 flex flex-col"
+        className="absolute top-12 left-6 md:top-10 md:left-10 z-20 flex flex-col"
         initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <span className="text-gray-500 text-[10px] md:text-xs font-semibold tracking-widest uppercase mb-1">Skills</span>
@@ -22,7 +22,7 @@ function ExperienceMovie() {
 
       {/* --- HEADER TENGAH ATAS --- */}
       <motion.div 
-        className="absolute top-12 md:top-20 left-1/2 -translate-x-1/2 z-20 w-full text-center"
+        className="w-full text-center z-20 mb-4 md:mb-0 md:absolute md:top-20 md:left-1/2 md:-translate-x-1/2 mt-16 md:mt-0"
         initial={{ opacity: 0, y: -30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       >
         <h2 className="text-xs md:text-lg font-medium tracking-[0.3em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">
@@ -34,7 +34,7 @@ function ExperienceMovie() {
       <div className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[480px] h-[480px] bg-red-800/20 rounded-full blur-[100px] pointer-events-none z-0"></div>
 
       {/* --- GRID VIDEO RAPI (2 - 3 - 2) --- */}
-      <div className="flex flex-col gap-2 md:gap-4 w-full max-w-4xl z-10 md:-translate-y-6 mt-16 md:mt-10">
+      <div className="flex flex-col gap-2 md:gap-4 w-full max-w-4xl z-10 md:-translate-y-6 mt-0 md:mt-10">
         
         {/* BARIS 1: 2 Video */}
         <motion.div 
